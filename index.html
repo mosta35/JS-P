@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Todo List</title>
+  </head>
+  <body>
+
+    <div class="moJaffer">
+      <a href="/">
+
+        <span>20 ист 4 Мустафа Сулиман (TO DO LIST) </span>
+      </a>
+    </div>
+
+    <div class="container">
+
+      <form id="form">
+        <input type="text" name="text" id="newTodo" placeholder="Вводите текст здесь...">
+        <span id="error"></span>
+        <button type="submit" name="button" id="submitButton">
+          <i class="far fa-calendar-plus"></i>
+          добавление
+        </button>
+      </form>
+
+      <h4 id="emptyMessage">У вас нет заданий</h4>
+
+      <ul id="list">
+        <li>
+          Сделать отчет о практике
+          <i class="fas fa-trash delete"></i>
+        </li>
+        <li class="checked">
+          ходить по магазинам
+          <i class="fas fa-trash delete"></i>
+        </li>
+        <li class="checked">
+          Наполните бак автомобиля
+          <i class="fas fa-trash delete"></i>
+        </li>
+
+
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="./index.js"> </script>
+  </body>
+</html>

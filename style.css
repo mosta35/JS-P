@@ -1,0 +1,157 @@
+@import url(//fonts.googleapis.com/earlyaccess/notokufiarabic.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, button {
+ font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+body {
+  background: #dfdfdf;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 4px;
+  height: 70vh;
+  width: 400px;
+  overflow: scroll;
+  overflow: auto;
+}
+
+form {
+  margin-bottom: 25px;
+}
+
+input {
+  border: none;
+  width: 95%;
+  height: 20px;
+  padding: 10px;
+  background: #dfdfdf;
+  border-radius: 4px;
+  display: block;
+}
+
+#submitButton {
+  border: none;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  background: #ea5455;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  font-size: 13px;
+}
+
+#submitButton:hover {
+  background: #e26869;
+}
+
+.delete {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top:10px;
+}
+
+.delete:hover {
+  color: #ff5656;
+}
+
+ul li {
+  list-style: none;
+  text-align: right;
+  font-size: 13px;
+  background: #dfdfdf;
+  border-radius: 4px;
+  color: #5a5a5a;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  margin: 15px 0;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  background: #aba8a8;
+  color: #fff;
+}
+
+ul li:hover {
+  background: #d2cfcf;
+}
+
+ul li.checked:hover {
+  background: #908e8e;
+}
+
+#error {
+  text-align: right;
+  display: block;
+  color: #ea5455;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-top: 3px;
+  display: none;
+}
+
+#emptyMessage {
+  display: block;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  color: #5a5a5a;
+  background: #dfdfdf;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 4px;
+  display: none;
+}
+
+/* ---------- MoJaffer ---------- */
+
+.moJaffer {
+  width: 400px;
+  margin: 30px auto;
+  text-align: center;
+  animation: lighting 1.5s infinite;
+}
+
+.moJaffer a {
+  text-decoration: none;
+  text-align: center;
+  color: #5a5a5a;
+}
+
+.moJaffer:hover {
+   animation-name: none;
+}
+
+.moJaffer img {
+  width: 200px;
+}
+
+.moJaffer span {
+  display: block;
+  margin-top: -20px;
+  font-family: monospace;
+}
+
+@keyframes lighting{
+    0{ opacity: 1 }
+    25% { opacity: 0.25}
+    75% { opacity: 0.75}
+    1000% { opacity: 1}
+}
